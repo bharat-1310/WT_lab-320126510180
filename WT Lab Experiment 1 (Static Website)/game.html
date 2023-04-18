@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Guessing Game!!</title>
+        <style>
+            body
+            {
+                text-align: center;
+                background-image: url("g1.jpg");
+                background-size: cover;
+    
+            }
+            h1
+            {
+                font-size: 2em;
+                margin-top: 50px;
+                color:blue;
+            }
+            #gin
+            {
+              font-size: 15px;
+              width:60px;
+              height:50px;
+            }
+            button
+            {
+                font-size: 1.5em;
+                margin-top:10px;
+                border:5 px solid green;
+            }
+        </style>
+    </head>
+<body ><br><br><br><br><br><br>
+    <h1>Guess Number Between 1 to 100</h1>
+    <form>
+        <input type="number" id="gin"><br>
+        <button type="button" onclick="guess()">Check</button>
+    </form>
+    <p id="res"></p>
+    <p id="rem"></p>
+<script>
+    const rno=parseInt(Math.floor(Math.random()*100)+1);
+    var ra=5;
+    function guess()
+    {
+        var guess=document.getElementById("gin").value;
+        var rematt=document.getElementById("rem");
+            if(guess<1 || guess>100)
+            {
+                document.getElementById("res").innerHTML="Eneter a Number Between 1 and 100";
+            }
+            if(guess<rno)
+            {
+                document.getElementById("res").innerHTML="Guess is too low";
+                ra--;
+                if(ra>0)
+                {
+                document.getElementById("res").innerHTML="Guess is too low";
+                gin.value="";
+                }
+                else
+                {
+                document.getElementById("res").innerHTML="Out of attempts";
+                gin.disabled=true;
+                }
+                rematt.innerHTML="Remaining attemts: "+ra;
+            }
+            else if(guess>rno)
+            {
+                document.getElementById("res").innerHTML="Guess is too high";
+                ra--;
+                if(ra>0)
+                {
+                document.getElementById("res").innerHTML="Guess is too high";
+                gin.value="";
+                }
+                else
+                {
+                document.getElementById("res").innerHTML="Out of attempts";
+                gin.disabled=true;
+                }
+                rematt.innerHTML="Remaining attemts: "+ra;
+            }
+            else if(guess==rno)
+            {
+                document.getElementById("res").innerHTML="Congratulations! Your guess is correct";
+                rematt.innerHTML="";
+            }
+            if(ra==0)
+            {
+                document.getElementById("res").innerHTML="Sorry, you failed in guessing the number. The number is "+rno+".";
+                rematt.innerHTML="";
+                gin.disabled=true;
+            }
+        }
+</script>
+</body>
+</html>

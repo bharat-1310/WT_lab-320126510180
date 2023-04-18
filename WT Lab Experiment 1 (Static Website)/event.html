@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1><p id="mainhead">Welcome to Tutorials of event handling in javascript</p></h1>
+    <ul>
+        <li> ONCLICK EVENT:
+            <button onclick="document.getElementById('p129').innerHTML=Date()">Time is?</button>
+            <p id="p129"></p></li>
+        <li> ONSUBMIT EVENT:
+            <a href="forms.html">click to fill the form</a>
+        </li>
+        <li>
+             <p> ONMOUSEOVER AND ONMOUSEOUT EVENTS:</p>
+             <img src="img.jpg" alt="NO image" onmouseover="f1(this)" onmouseout="f2(this)" height="100" width="100">
+        </li>
+        <li>
+            <p>ONKEY PRESS EVENT:</p>
+            <label for="type input">Enter your name</label>
+            <input type="text" name="nm" id="box1" onkeypress="f3()">
+        </li>
+        <li>
+            <p>ON MOUSEUVER EVENT WITH PARAGRAPH</p>
+            <button onclick="f4()">here is an example of mouseover on para</button>
+        </li>
+    </ul>
+    <script>
+        function f1(x){
+            x.style.height="200px";
+            x.style.width="200px";
+        }
+        function f2(y){
+            y.style.height="100px";
+        y.style.width="100px";
+            }
+        function f3(){
+            alert("key pressed inside text box");
+        }
+        function f4(){
+            document.getElementById("mainhead").style.color="red";
+        }
+    </script>
+    
+</body>
+</html>

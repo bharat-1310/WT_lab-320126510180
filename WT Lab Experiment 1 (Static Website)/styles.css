@@ -1,0 +1,51 @@
+.b {
+	margin:100px;
+	padding: 20px;
+    background-image:url("img5.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h1{
+    color:yellow;
+}
+label {
+	display: block;
+	margin-right: 100px;
+    color:yellow;
+    font-size: large;
+}
+.ta{
+    text-align: center;
+}
+.s{
+    margin-bottom: 20px;
+    padding:10px;
+    background-color:burlywood;
+    border-color:brown;
+    border-width: 3px;
+}
+.s:hover {
+    background-color:cadetblue;
+}
+button {
+	margin-top: 20px;
+}
+#total-container {
+	text-align: center;
+	margin-top: 20px;
+}
+#submit-btn{
+    text-align: center;
+    font-size: x-large;
+    color:darkgreen;
+}
+#tr{
+    color: black;
+    text-align: center;
+    text-shadow: 10px;
+    font-size:xx-large;
+}
+#total {
+	font-weight: bold;
+    color:black;
+}

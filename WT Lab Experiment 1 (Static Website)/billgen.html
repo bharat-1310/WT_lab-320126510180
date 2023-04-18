@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Bill Generator</title>
+	<link rel="StyleSheet" href="styles.css">
+</head>
+<body class="b">
+	<div class="container">
+		<center><h1>Restaurant Bill Generator</h1></center>
+		<form id="order">
+            <table class="ta" align="center" cellpadding="5">
+			<tr><td><label for="appetizers">Appetizers:</label></td>
+			<td><select class="s" id="appetizers" name="appetizers">
+				<option value="0" selected="selected">None</option>
+				<option value="4.99">Mozzarella Sticks</option>
+				<option value="5.99">Fried Calamari</option>
+				<option value="6.99">Garlic Bread</option>
+			</select></td>
+            <td>X</td>
+            <td width="5px"><input type="number" id="appid" value="1" min="1" class="s"></td>
+            </tr>
+			<tr><td><label for="entrees">Entrees:</label></td>
+			<td><select  class="s" id="entrees" name="entrees">
+				<option value="0" selected="selected">None</option>
+				<option value="12.99">Spaghetti and Meatballs</option>
+				<option value="14.99">Chicken Alfredo</option>
+				<option value="16.99">Steak and Fries</option>
+			</select></td>
+            <td>X</td>
+            <td width="5px"><input type="number" id="entid" value="1" min="1" class="s"></td>
+            </tr>
+			<tr><td><label for="drinks">Drinks:</label></td>
+			<td><select class="s" id="drinks" name="drinks">
+				<option value="0" selected="selected">None</option>
+				<option value="2.99">Soda</option>
+				<option value="4.99">Beer</option>
+				<option value="7.99">Wine</option>
+			</select></td>
+            <td>X</td>
+            <td width="5px"><input type="number" id="driid" value="1" min="1" class="s"></td>
+            </tr>
+			<tr><td><label for="desserts">Desserts:</label></td>
+			<td><select class="s" id="desserts" name="desserts">
+				<option value="0" selected="selected">None</option>
+				<option value="3.99">Cheesecake</option>
+				<option value="4.99">Tiramisu</option>
+				<option value="5.99">Chocolate Cake</option>
+			</select></td>
+            <td>X</td>
+            <td width="5px"><input type="number" id="desid" value="1" min="1" class="s"></td>
+            </tr></table>
+			<center><button type="submit" id="submit-btn">Calculate Total</button></center>
+		</form>
+
+		<div id="tr">
+			<p id="total"></p>
+		</div>
+	</div>
+
+	<script src="sc.js"></script>
+</body>
+</html>

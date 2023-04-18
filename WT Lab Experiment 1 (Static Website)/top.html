@@ -1,0 +1,29 @@
+<html>
+  <style type="text/css">
+    #date-time{
+      position: fixed;
+      bottom:0;
+      right:0;
+    }
+  </style>
+<body bgcolor="#FFFFD5">
+  <button id="date-time"></button>
+  <script>                                                                          
+    function updateTime(){
+      var now=new Date();
+      var dateTime=now.toLocaleString();
+      document.getElementById('date-time').innerHTML=dateTime;
+    }
+    setInterval(updateTime,1000);
+  </script>
+  <img src="img.jpg" align="left" height="130" weight="200">
+    <center>
+    <h2>ANIL NEERUKONDA INSTITUTE OF TECHNOLOGY & SCIENCES</h2>
+    <p>Sangivalasa-531 162,Bheemunipatnam Mandal,Visakhapatnam</p>
+    <marquee width="60%" direction="left" height="100px">
+(Permanent Affiliation by Andhra University & Approved by AICTE
+Accredited by NBA (ECE, EEE, CSE, IT, Mech. Civil & Chemical) & NAAC)</marquee>
+</center>
+</p>
+</body>
+</html>
